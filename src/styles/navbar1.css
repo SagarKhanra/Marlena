@@ -1,0 +1,98 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Logo styling */
+.logo img {
+  height: 50px;
+}
+
+/* Navigation links styling */
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+/* Navbar button styling */
+.navbar-button .free-consultation {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button .free-consultation:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile menu icon styling */
+.icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .icon {
+    display: block;
+  }
+}
